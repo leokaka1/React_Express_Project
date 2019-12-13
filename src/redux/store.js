@@ -1,9 +1,9 @@
 import {createStore,combineReducers,applyMiddleware,compose} from 'redux'
 import thunk from 'redux-thunk'
-import demo1R from './reducers/demo1Reducer'
+import {Demo1Reducer} from './reducers/demo1Reducer'
 
 const rootReducer = combineReducers({
-    demo1:demo1R
+    demo1:Demo1Reducer
 })
 
 // middleWare
